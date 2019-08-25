@@ -1,2 +1,4 @@
 ---
-  $apache::package_name: 'httpd'
+  apache::package_name: 'httpd'
+  apache::config_path: '/etc/httpd/conf/httpd.conf'
+

@@ -11,7 +11,7 @@ class apache::params {
       $package_name = 'apache2'
     }
     default: {
-      notify {"$facts['os']['family'] not supported": }
+      notify {"${facts.os.family} not supported": }
     }
   }
 }

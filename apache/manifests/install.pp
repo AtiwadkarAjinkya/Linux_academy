@@ -8,10 +8,9 @@
 #    name   => $package_name,
 #    ensure => $install_state,
 #  }
-}
-class apache::isntall {
-  package{ 'apache_package':
-    name   => $::package_name,
-    ensure => $::install_state,
+#}
+class apache::install {
+  package { $apache::package_name:
+    ensure => $apache::install_state,
   }
 }
